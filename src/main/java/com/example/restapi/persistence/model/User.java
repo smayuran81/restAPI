@@ -4,12 +4,9 @@ import java.util.Set;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import com.example.restapi.interfaces.INameableDto;
-import com.example.restapi.interfaces.INameableEntity;
 
 
-
-public class User implements INameableEntity, INameableDto {
+public class User {
 
     private Long id;
 
@@ -44,17 +41,17 @@ public class User implements INameableEntity, INameableDto {
 
     // API
 
-    @Override
+    
     public Long getId() {
         return id;
     }
 
-    @Override
+    
     public void setId(final Long idToSet) {
         id = idToSet;
     }
 
-    @Override
+    
     public String getName() {
         return name;
     }

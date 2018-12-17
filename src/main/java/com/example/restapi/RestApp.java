@@ -7,13 +7,15 @@ import org.springframework.context.annotation.Import;
 
 import com.example.restapi.spring.RestAppPersistenceJpaConfig;
 import com.example.restapi.spring.RestContextConfig;
+import com.example.restapi.spring.RestWebConfig;
 
 
 
 @SpringBootApplication
 @Import({
 	RestContextConfig.class,
-	RestAppPersistenceJpaConfig.class
+	RestAppPersistenceJpaConfig.class,
+	RestWebConfig.class
 })
 public class RestApp extends SpringBootServletInitializer {
 	

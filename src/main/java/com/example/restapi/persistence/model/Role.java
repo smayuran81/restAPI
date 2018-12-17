@@ -14,10 +14,8 @@ import javax.persistence.ManyToMany;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import com.example.restapi.interfaces.INameableEntity;
-
 @Entity
-public class Role implements INameableEntity, com.example.restapi.interfaces.INameableDto {
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -50,17 +48,17 @@ public class Role implements INameableEntity, com.example.restapi.interfaces.INa
 
     // API
 
-    @Override
+  
     public Long getId() {
         return id;
     }
 
-    @Override
+  
     public void setId(final Long idToSet) {
         id = idToSet;
     }
 
-    @Override
+  
     public String getName() {
         return name;
     }

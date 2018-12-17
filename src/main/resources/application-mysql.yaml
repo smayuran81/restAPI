@@ -17,6 +17,7 @@ spring:
   security:
            user:
             name: mayuran
+            password: mayuran
   server:
          port:8989
 logging:

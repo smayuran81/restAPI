@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 // @EnableJpaRepositories(basePackages = "com.example.restapi.persistence.dao")
-@ComponentScan({"com.example.restapi.persistence.dao"})
+@ComponentScan({"com.example.restapi.persistence.dao","com.example.restapi.persistence.repository"})
 public class RestAppPersistenceJpaConfig {
 
 }

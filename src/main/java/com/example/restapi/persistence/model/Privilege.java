@@ -12,12 +12,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
-import com.example.restapi.interfaces.INameableDto;
-import com.example.restapi.interfaces.INameableEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-public class Privilege implements INameableEntity, INameableDto {
+public class Privilege {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -45,17 +43,17 @@ public class Privilege implements INameableEntity, INameableDto {
 
     // API
 
-    @Override
+  
     public Long getId() {
         return id;
     }
 
-    @Override
+  
     public void setId(final Long idToSet) {
         id = idToSet;
     }
 
-    @Override
+  
     public String getName() {
         return name;
     }
